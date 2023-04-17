@@ -1,0 +1,114 @@
+.seo-steps {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+}
+
+.projects-graph {
+    background: $dark;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    .title-black {
+        color: white;
+    }
+
+    .swiper-container {
+        margin-top: 4rem;
+        position: relative;
+    }
+
+    .swiper-scrollbar {
+        top: unset;
+        bottom: -15rem;
+        height: 1px;
+        background: repeating-linear-gradient(
+            90deg,
+            $dark,
+            $dark 10px,
+            white 10px,
+            white 20px
+          );
+    }
+
+    .swiper-scrollbar-drag {
+        background: transparent;
+        height: 3px;
+        top: -1px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 100%;
+            height: 3rem;
+            width: 3rem;
+            background: $orange;
+            display: block;
+        }
+    }
+
+    .swiper-slide {
+        border: 2px dashed white;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        display: block;
+        width: 70rem;
+        height: 53rem;
+    }
+}
+
+.seo-steps__el {
+    display: flex;
+    align-items: center;
+}
+
+.seo-steps__el_num {
+    width: 29rem;
+    position: relative;
+    
+    svg {
+        width: 100%;
+        font-family: "Gilroy";
+        font-size: .9rem;
+        font-weight: 300;
+        line-height: 1.16;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $orange;
+    }
+
+    span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 12rem;
+        font-weight: 800;
+        line-height: 1.23;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.seo-steps__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.seo-steps__el_descr {
+    max-width: 85rem;
+    margin-left: 8rem;
+
+    .seo-steps__el_text {
+        font-size: 2.4rem;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 2rem 0 0;
+    }
+}
